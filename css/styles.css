@@ -24,7 +24,8 @@ ul {
   font-size: 26px;
   line-height: 1.192;
   letter-spacing: 0.03em;
-  color: var(--accent-color); 
+  color: var(--accent-color);
+  text-decoration:none;
 }
 
 .secondary-item {
@@ -33,6 +34,7 @@ ul {
   line-height: 1.192;
   letter-spacing: 0.03em;
   color: var(--title-text-color);
+  text-decoration:none;
 }
 
 .link {
@@ -46,6 +48,10 @@ ul {
  .navigation .link.current {
    color: var(--accent-color);
  }
+
+.navigation .link {
+  text-decoration:none;
+}
 
 .auth-nav {
 font-weight: 500;
