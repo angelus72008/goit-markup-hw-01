@@ -7,6 +7,19 @@
   --accent-color: #2196F3;
 }
 
+
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+  margin: 0;
+  padding: 0;
+}
+
 body {
     font-family: var(--main-font);
     color: var(--text-color);  
@@ -15,8 +28,37 @@ body {
 ul {
     list-style:none;
   }
+
+  .container {
+    width: 1170px;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin: 0 auto;
+  }
   
 /* шапка сайта */
+
+.page-header {
+  padding-top: 25px;
+  padding-bottom: 24px;
+}
+
+.page-header .auth {
+  margin-left: auto;
+}
+
+.page-header-container {
+  display: flex;
+  align-items: center;
+}
+
+.logo-list {
+  display: flex;
+}
+
+.logo {
+  margin-right:71px;
+}
 
 .first-item {
   font-family: Raleway;
@@ -45,6 +87,16 @@ ul {
    color: var(--title-text-color);
  }
 
+ .navigation{
+   display: flex;
+   align-items: center;
+ }
+
+.navigation-list-item:not(:last-child) {
+  margin-right: 50px;
+}
+
+
  .navigation .link.current {
    color: var(--accent-color);
  }
@@ -60,6 +112,7 @@ line-height: 1.143;
 letter-spacing: 0.02em;
 color: var(--text-color);
 text-decoration:none;
+margin-right: 40px;
 }
 
 .auth .auth-nav.current {
@@ -75,6 +128,13 @@ color: var(--accent-color);
 
 /* HERO */
 
+.hero-container {
+padding-top: 200px;
+padding-bottom: 280px;
+}
+
+
+
 .hero-item {
 font-weight: 900;
 font-size: 44px;
@@ -85,6 +145,8 @@ text-transform: uppercase;
 color: var(--background-color);
 background-color: var(--title-text-color);
 }
+
+
 
 .button {
 font-weight: bold;
@@ -98,9 +160,21 @@ color: var(--background-color);
 background-color: var(--accent-color);
 border-color: transparent;
 text-decoration:none;
+padding-left: 478px;
 }
 
 /* ПРЕИМУЩЕСТВА */
+
+.features {
+  display: flex;
+ }
+
+ .features-container {
+  margin-left: auto;
+  padding-right: 30px;
+  padding-top: 89px;
+  padding-bottom: 94px;
+}
 
 .features-title {
 font-weight: bold;
@@ -121,6 +195,12 @@ color: var(--text-color);
 
 /* ЧЕМ МЫ ЗАНИМАЕМСЯ */
 
+.img-list {
+ display: flex;
+ justify-content: space-between;
+}
+
+
 .section-text {
 font-weight: bold;
 font-size: 36px;
@@ -128,9 +208,27 @@ line-height: 1.167;
 text-align: center;
 letter-spacing: 0.03em;
 color: var(--title-text-color);
+padding-bottom: 50px;
+padding-top: 94px;
 }
 
 /* НАША КОМАНДА */
+
+.team-list {
+  display: flex;
+  justify-content: space-between;
+}
+
+.team-title {
+font-weight: bold;
+font-size: 36px;
+line-height: 1.167;
+text-align: center;
+letter-spacing: 0.03em;
+color: var(--title-text-color);
+padding-top: 94px;
+padding-bottom: 50px;
+}
 
 .our-team-list {
 font-weight: 500;
@@ -151,6 +249,24 @@ color: var(--text-color);
 }
 
 /* ПОРТФОЛИО */
+
+.filter {
+  display: flex;
+  justify-content: center;
+  padding-top: 94px;
+  padding-bottom: 50px;
+}
+
+.filter-list-item {
+  margin-left: 8px;
+}
+
+.portfolio-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding-bottom: 30px;
+}
 
 .photo-list {
   text-decoration:none;
